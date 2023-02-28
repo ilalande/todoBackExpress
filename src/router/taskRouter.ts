@@ -43,9 +43,7 @@ tasksRouter.post('/', async (req, res) => {
 
 tasksRouter.put('/:id', async (req, res) => {
   const { id } = req.params;
-  console.log(id);
   const taskId = parseInt(id);
-  console.log(taskId);
   const updatedTaskData: IAddTaskPayload = {
     title: req.body.title,
     description: req.body.description,
